@@ -18,7 +18,7 @@ This repository contains the source code of SendPulse mailing list selector cust
 
 ## Response
 Mailing lists are retrieved in an array of mailing list objects. After selecting a mailing list from SendPulse the object is saved in Kentico Kontent.
-For more information see: https://sendpulse.com/br/integrations/api/bulk-email
+For more information see: https://sendpulse.com/br/integrations/api/bulk-email.
 ```
 [
 {
@@ -43,6 +43,9 @@ For more information see: https://sendpulse.com/br/integrations/api/bulk-email
   }
 ]
 ```
+
+## Purpose
+When an mailing list is selected its ID can be used in a POST request to SendPulse to add one or multiple email adresses to the mailing list. This POST request for example can be added to a simple form on your website. The POST request is not part of the custom element. 
 
 ## Deploying
 Netlify has made this easy. If you click the deploy button below, it will guide you through the process of deploying it to Netlify and leave you with a copy of the repository in your GitHub account as well.
